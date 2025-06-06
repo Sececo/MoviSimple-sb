@@ -1,7 +1,7 @@
 ## Integrantes
 - Edwin Yair Molina Cerón - 408873
 - Sebastian Ceballos - 408964
-- Jonnier Cadena -
+- Jonnier Cadena - 409238
 
 ## Descripcion del problema
 - En MoviSimple no hay Uber ni Cabify: aquí los conductores son héroes que recorren un mapa con 
