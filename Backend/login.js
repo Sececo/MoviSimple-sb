@@ -4,7 +4,7 @@ const loginMessage = document.getElementById('loginMessage');
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const email = loginForm.email.value;
+  const username = loginForm.username.value;
   const password = loginForm.password.value;
 
   const response = await fetch('http://localhost:3000/login', {
@@ -12,7 +12,7 @@ loginForm.addEventListener('submit', async (e) => {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ email, password })
+    body: JSON.stringify({ username, password })
   });
 
   const data = await response.text();

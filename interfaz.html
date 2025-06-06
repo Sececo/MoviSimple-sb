@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar viaje</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/interfaz.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Solicitar viaje</h1>
+    <div id="mapContainer">
+      <div class="node" id="nodeA" style="top: 50px; left: 50px;">A</div>
+      <div class="node" id="nodeB" style="top: 50px; left: 200px;">B</div>
+      <div class="node" id="nodeC" style="top: 150px; left: 125px;">C</div>
+      <div class="node" id="nodeD" style="top: 250px; left: 50px;">D</div>
+      <div class="node" id="nodeE" style="top: 250px; left: 200px;">E</div>
+      <div class="node" id="nodeF" style="top: 150px; left: 275px;">F</div>
+
+      <!-- Edges -->
+      <div class="edge" style="top: 65px; left: 80px; width: 120px; height: 2px;"></div> <!-- A-B -->
+      <div class="edge" style="top: 80px; left: 65px; width: 80px; height: 2px; transform: rotate(60deg); transform-origin: top left;"></div> <!-- A-C -->
+      <div class="edge" style="top: 265px; left: 80px; width: 120px; height: 2px;"></div> <!-- D-E -->
+      <div class="edge" style="top: 165px; left: 155px; width: 120px; height: 2px;"></div> <!-- C-F -->
+    </div>
+    <form id="requestTripForm">
+      <label for="startNode">Nodo de inicio:</label>
+      <input type="text" id="startNode" name="startNode" required><br><br>
+
+      <label for="endNode">Nodo de destino:</label>
+      <input type="text" id="endNode" name="endNode" required><br><br>
+
+      <button type="submit">Solicitar viaje</button>
+    </form>
+    <p id="tripMessage"></p>
+    <div id="animationContainer">
+      <div id="movil"></div>
+    </div>
+    <p id="costMessage"></p>
+  </div>
+
+  <script src="interfaz.js"></script>
+</body>
+</html>
