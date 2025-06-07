@@ -1,41 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .container {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  width: 400px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  color: #555;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="email"] {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Para que el padding no aumente el ancho total */
+  font-size: 16px;
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #5cb85c;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: #4cae4c;
 }
 
 .message {
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: center;
   font-weight: bold;
+  color: #d9534f; /* Rojo por defecto para errores */
 }
 
+.message.success {
+  color: #5cb85c; /* Verde para mensajes de éxito */
+}
 #animationContainer {
   width: 300px;
   height: 200px;
