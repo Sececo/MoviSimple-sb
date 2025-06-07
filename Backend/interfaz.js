@@ -105,6 +105,7 @@ function animateMovil(path, distance) {
 
   requestAnimationFrame(animate);
 }
+//unir estas funciones para que el circulo navegue por la ruta
 
 function drawRoute(path) {
   for (let i = 0; i < path.length - 1; i++) {
