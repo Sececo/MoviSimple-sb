@@ -3,37 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Solicitar viaje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-  <div class="container">
+  <!-- Video de fondo y blur -->
+  <video autoplay muted loop id="bg-video">
+    <source src="Fondo/Tierra.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+  <div class="blur-bg"></div>
+  <div class="container login-box">
     <h1>Solicitar viaje</h1>
     <div id="mapContainer">
       <!-- NODOS -->
-      <div class="node" id="nodeA" style="top: 50px; left: 120px;">A</div>
-      <div class="node" id="nodeB" style="top: 50px; left: 330px;">B</div>
-      <div class="node" id="nodeC" style="top: 150px; left: 60px;">C</div>
-      <div class="node" id="nodeD" style="top: 150px; left: 220px;">D</div>
-      <div class="node" id="nodeE" style="top: 150px; left: 380px;">E</div>
-      <div class="node" id="nodeF" style="top: 250px; left: 230px;">F</div>
-
+      <div class="node" id="nodeA" style="top: 20px; left: 80px;">A</div>
+      <div class="node" id="nodeB" style="top: 20px; left: 180px;">B</div>
+      <div class="node" id="nodeC" style="top: 70px; left: 40px;">C</div>
+      <div class="node" id="nodeD" style="top: 70px; left: 130px;">D</div>
+      <div class="node" id="nodeE" style="top: 70px; left: 220px;">E</div>
+      <div class="node" id="nodeF" style="top: 120px; left: 130px;">F</div>
+      <!-- Bola azul del recorrido -->
       <div id="movil"></div>
-      </div>
-
-    <form id="requestTripForm">
-      <label for="startNode">Nodo de inicio:</label>
-      <input type="text" id="startNode" required><br><br>
-
-      <label for="endNode">Nodo de destino:</label>
-      <input type="text" id="endNode" required><br><br>
-
+      <!-- Aquí puedes agregar las aristas con líneas absolutas si quieres visualmente -->
+    </div>
+    <form id="requestTripForm" autocomplete="off">
+      <label for="startNode">Origen:</label>
+      <select id="startNode" required>
+        <option value="">Selecciona origen</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+      </select>
+      <label for="endNode">Destino:</label>
+      <select id="endNode" required>
+        <option value="">Selecciona destino</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+      </select>
       <button type="submit">Solicitar viaje</button>
+      <div id="progressBar">
+        <div id="progressFill"></div>
+      </div>
     </form>
-
     <p id="tripMessage"></p>
     <p id="costMessage"></p>
   </div>
-
   <script src="Scripts/interfaz.js"></script>
 </body>
 </html>

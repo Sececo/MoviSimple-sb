@@ -1,20 +1,26 @@
 {
-  "name": "movisimple-sb",
+  "name": "movisimple",
   "version": "1.0.0",
-  "description": "",
-  "main": "Backend/server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node Backend/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edwin5659w/MoviSimple.git"
   },
   "keywords": [],
-  "author": "Sececo",
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "1.20.2",
-    "cors": "2.8.5",
-    "express": "4.18.2"
+  "bugs": {
+    "url": "https://github.com/Edwin5659w/MoviSimple/issues"
   },
-  "devDependencies": {
-    "nodemon": "3.0.3"
-  }
+  "homepage": "https://github.com/Edwin5659w/MoviSimple#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "description": ""
 }
