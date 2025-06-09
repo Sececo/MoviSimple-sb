@@ -114,17 +114,6 @@ h1 {
 }
 
 #movil {
-<<<<<<< HEAD
-  width: 18px;
-  height: 18px;
-  background-color: #38f9d7;
-  border-radius: 50%;
-  border: 2px solid #43e97b;
-  position: absolute;
-  z-index: 3;
-  display: none;
-  transition: left 0.4s, top 0.4s;
-=======
   width: 16px;
   height: 16px;
   background: #38f9d7;
@@ -137,7 +126,6 @@ h1 {
   top: -9999px;
   transition: left 0.4s, top 0.4s;
   box-shadow: 0 0 8px #38f9d7aa;
->>>>>>> 754caca40b622402ff74bb939f4835989d38c733
 }
 
 .route-line {
