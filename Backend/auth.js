@@ -3,6 +3,8 @@ const path = require('path');
 
 const usersFilePath = path.join(__dirname, 'users.txt');
 
+
+
 // Función para registrar un nuevo usuario
 function registerUser(username, password, email) {
   // 1. Verificar si el usuario ya existe

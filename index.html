@@ -7,6 +7,21 @@
   <link rel="stylesheet" type="text/css" href="Styles/style.css">
 </head>
 <body>
+    <!-- Video de fondo que se reproduce en bucle, sin sonido -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/Tierra.mp4" type="video/mp4">
+  </video>
+  <!-- Capa de desenfoque sobre el video para mejorar la legibilidad -->
+  <div class="blur-bg"></div>
+  <!-- Caja principal del formulario de inicio de sesión -->
+  <div class="login-box">
+    <!-- Avatar de usuario en la parte superior del formulario -->
+    <div class="avatar">
+      <img src="assets/icono.png" alt="avatar">
+    </div>
+    <!-- Título del formulario de inicio de sesión -->
+    <h2>Sign In</h2>
+    <!-- Formulario de inicio de sesión -->
   <div class="container">
     <h1>Login</h1>
     <form id="loginForm">
